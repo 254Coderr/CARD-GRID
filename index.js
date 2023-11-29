@@ -96,6 +96,7 @@ shuffleButton.addEventListener('click', () => {
 
 // Initialize the card grid when the page loads
 document.addEventListener('DOMContentLoaded', createCardGrid); */
+// Array containing exercise data with names and descriptio
 const exerciseData = [
     { name: 'Jumping Jacks', description: 'Cardio exercise that involves jumping and arm movements.' },
     { name: 'Push-ups', description: 'Strength-building exercise for the chest, shoulders, and arms.' },
@@ -106,16 +107,16 @@ const exerciseData = [
     { name: 'Squats', description: 'Lower body exercise that targets the muscles in the thighs and buttocks.' },
     { name: 'Swimming', description: 'Full-body exercise that involves swimming in a pool or open water.' },
 ];
-
+// Array to store flipped cards during the game
 let flippedCards = [];
-
+// Function to shuffle the exercise cards
 function shuffleCards() {
     for (let i = exerciseData.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [exerciseData[i], exerciseData[j]] = [exerciseData[j], exerciseData[i]];
     }
 }
-
+// Function to handle card flipping when clicked
 function flipCard(card) {
     if (flippedCards.length === 2) {
         return;
