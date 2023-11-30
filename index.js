@@ -118,19 +118,21 @@ function shuffleCards() {
 }
 // Function to handle card flipping when clicked
 function flipCard(card) {
+    // Return if two cards are already flipped
     if (flippedCards.length === 2) {
         return;
     }
-
+ // Add 'flipped' class to visually flip the card
     card.classList.add('flipped');
     flippedCards.push(card);
-
+// Check if two cards are flipped
     if (flippedCards.length === 2) {
         const [card1, card2] = flippedCards.map(card => card.dataset.value);
-
+// Match cards if their values match
         if (card1 === card2) {
             flippedCards.forEach(card => card.remove());
         } else {
+            // Flip cards back if they don't match after a delay
             setTimeout(() => {
                 flippedCards.forEach(card => {
                     card.classList.remove('flipped');
@@ -140,7 +142,7 @@ function flipCard(card) {
             }, 1000);
         }
 
-        flippedCards = [];
+        flippedCards = []; // Reset flipped cards array,an empty array
     }
 
     // Display the description on card flip
@@ -155,11 +157,11 @@ function flipCard(card) {
         card.style.transform = 'rotateY(180deg)';
     });
 }
-
+// Function to create the initial card grid
 function createCardGrid() {
     shuffleCards();
     const gameBoard = document.getElementById('game-board');
-
+ // Create cards based on exercise data
     for (const data of exerciseData) {
         const card = document.createElement('div');
         card.classList.add('card', 'hidden');
@@ -173,18 +175,18 @@ function createCardGrid() {
         card.addEventListener('click', () => flipCard(card));
         gameBoard.appendChild(card);
     }
-
+// Reveal cards after a delay
     setTimeout(() => {
         gameBoard.querySelectorAll('.card').forEach(card => card.classList.remove('hidden'));
     }, 500);
 }
-
+// Shuffle button event listener to reset and shuffle the cards
 const shuffleButton = document.getElementById('shuffle-button');
 
 shuffleButton.addEventListener('click', () => {
-    document.getElementById('game-board').innerHTML = '';
-    createCardGrid();
+    document.getElementById('game-board').innerHTML = ''; // Clear the game board
+    createCardGrid();  // Recreate the card grid
 });
-
+// Initialize the card grid when the page loads
 document.addEventListener('DOMContentLoaded', createCardGrid);
 
