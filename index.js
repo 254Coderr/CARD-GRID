@@ -106,7 +106,7 @@ const exerciseData = [
     { name: 'Cycling', description: 'Low-impact cardiovascular exercise using a stationary bike.' },
     { name: 'Squats', description: 'Lower body exercise that targets the muscles in the thighs and buttocks.' },
     { name: 'Swimming', description: 'Full-body exercise that involves swimming in a pool or open water.' },
-    { name: 'Squats', description: 'Cardio exercise that involves squating and arm movements.' }
+    { name: 'banana jump', description: 'Cardio exercise that involves legs and arm movements.' }
 ];
 // Array to store flipped cards during the game
 let flippedCards = [];
