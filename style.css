@@ -21,7 +21,7 @@ body {
     height: 100px;
     background-color: rgb(218, 19, 218);
     border: 1px solid #999;
-    display: flex;
+    display: -ms-inline-grid;
     align-items: center;
     justify-content: center;
     font-size: 1.5em;
