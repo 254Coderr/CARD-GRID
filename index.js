@@ -147,11 +147,11 @@ function flipCard(card) {
     }
 
     // Display the description on card flip
-    const descriptionElement = document.createElement('div');
-    descriptionElement.classList.add('card-description');
-    descriptionElement.textContent = exerciseData.find(data => data.name === card.dataset.value).description;
+  // Display the description separately (possibly in a different section of the page)
 
-    card.appendChild(descriptionElement);
+const descriptionSection = document.getElementById('description-section');
+    descriptionSection.textContent = exerciseData.find(data => data.name === card.dataset.value).description;
+
 
     card.style.transform = 'rotateY(0deg)';
     requestAnimationFrame(() => {
