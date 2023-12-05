@@ -19,7 +19,7 @@ body {
 .card {
     width: 100%;
     height: 100px;
-    background-color: rgb(218, 19, 218);
+    background-color: rgb(19, 218, 85);
     border: 1px solid #999;
     display: -ms-inline-grid;
     align-items: center;
