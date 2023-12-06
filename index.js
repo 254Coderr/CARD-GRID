@@ -123,6 +123,7 @@ function resetCards() {
     flippedCards.forEach(card => {
         card.classList.remove('flipped');
         card.style.transform = 'rotateY(0deg)';
+    
     });
 }
 
