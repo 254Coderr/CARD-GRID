@@ -56,3 +56,14 @@ button {
     transform: scale(1.05); /* Enlarge the card on hover */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow */
 }
+/* Style for the description section */
+#description-section {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
