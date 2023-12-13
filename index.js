@@ -141,7 +141,7 @@ function flipCard(card) {
         if (card1 === card2) {
             flippedCards.forEach(card => card.remove());
         } else {
-            setTimeout(resetCards, 1000);
+            setTimeout(resetCards, 2000);
         }
 
         flippedCards = [];
