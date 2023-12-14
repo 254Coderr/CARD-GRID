@@ -152,7 +152,7 @@ function flipCard(card) {
 
     card.style.transform = 'rotateY(0deg)';
     requestAnimationFrame(() => {
-        card.style.transform = 'rotateY(180deg)';
+        card.style.setProperty('transform', 'rotateY(180deg)');
     });
 }
 
