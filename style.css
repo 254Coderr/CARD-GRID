@@ -67,3 +67,25 @@ button {
     max-width: 600px;
     text-align: left;
 }
+#legend {
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+  }
+  
+  #legend ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #legend li {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #legend img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+  }
