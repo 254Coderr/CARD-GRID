@@ -166,8 +166,12 @@ function createCardGrid() {
 
         const valueElement = document.createElement('div');
         valueElement.classList.add('card-value');
-        valueElement.textContent = data.name;
-        card.appendChild(valueElement);
+        //valueElement.textContent = data.name;
+        const exerciseWrapper = document.createElement('span');
+        exerciseWrapper.classList.add('exercise-name');
+        exerciseWrapper.textContent = data.name;
+
+        valueElement.appendChild(exerciseWrapper);
 
         card.addEventListener('click', () => flipCard(card));
         gameBoard.appendChild(card);
