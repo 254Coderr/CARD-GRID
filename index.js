@@ -128,6 +128,7 @@ function resetCards() {
 }
 
 function flipCard(card) {
+    const cardBack = card.querySelector('.card-back'); // Assuming you add a class of "card-back" to the outer element
     if (flippedCards.length === 2) {
         return;
     }

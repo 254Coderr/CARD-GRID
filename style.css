@@ -46,7 +46,7 @@ button {
 /* Add this to your existing CSS */
 .card-value {
     font-size: 1em;
-    color: rgb(10, 30, 255);
+    color: #000(10, 30, 255);
     text-align: center; /* Center the text */
     padding: 10px; /* Add some padding for better visibility */
 }
