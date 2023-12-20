@@ -128,7 +128,7 @@ function resetCards() {
 }
 
 function flipCard(card) {
-    const cardBack = card.querySelector('.card-back'); // Assuming you add a class of "card-back" to the outer element
+    /*const cardBack = card.querySelector('.card-back'); // Assuming you add a class of "card-back" to the outer element*/
     if (flippedCards.length === 2) {
         return;
     }
@@ -167,12 +167,9 @@ function createCardGrid() {
 
         const valueElement = document.createElement('div');
         valueElement.classList.add('card-value');
-        //valueElement.textContent = data.name;
-        const exerciseWrapper = document.createElement('span');
-        exerciseWrapper.classList.add('exercise-name');
-        exerciseWrapper.textContent = data.name;
+        valueElement.textContent = data.name;
+        card.appendChild(valueElement);
 
-        valueElement.appendChild(exerciseWrapper);
 
         card.addEventListener('click', () => flipCard(card));
         gameBoard.appendChild(card);
