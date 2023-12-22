@@ -109,6 +109,20 @@ for (let i = 0; i < snowflakeCount; i++) {
     snowfallContainer.appendChild(snowflake);
     snowflakes.push(snowflake);
   }
+  // Animate snowflakes
+function animateSnowfall() {
+  snowflakes.forEach(snowflake => {
+    const top = parseInt(snowflake.style.top, 10);
+    snowflake.style.top = `${top + 1}vh`;
+    if (top > 100) {
+      snowflake.style.top = Math.random() * 100 + 'vh';
+      snowflake.style.left = Math.random() * 100 + 'vw';
+    }
+  });
+  requestAnimationFrame(animateSnowfall);
+}
+
+animateSnowfall(); // Start animation
   
 // Array containing exercise data with names and descriptio
 const exerciseData = [
