@@ -96,6 +96,9 @@ shuffleButton.addEventListener('click', () => {
 
 // Initialize the card grid when the page loads
 document.addEventListener('DOMContentLoaded', createCardGrid); */
+const snowfallContainer = document.querySelector('.snowfall-container');
+const snowflakes = [];
+const snowflakeCount = 100; // Adjust according to your preference
 // Array containing exercise data with names and descriptio
 const exerciseData = [
     { name: 'Jumping Jacks', description: 'Cardio exercise that involves jumping and arm movements.' },
