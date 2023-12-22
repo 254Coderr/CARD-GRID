@@ -99,6 +99,17 @@ document.addEventListener('DOMContentLoaded', createCardGrid); */
 const snowfallContainer = document.querySelector('.snowfall-container');
 const snowflakes = [];
 const snowflakeCount = 100; // Adjust according to your preference
+// Create and append snowflakes
+for (let i = 0; i < snowflakeCount; i++) {
+    const snowflake = document.createElement('div');
+    snowflake.classList.add('snowflake');
+    snowflake.style.position = 'absolute';
+    snowflake.style.top = Math.random() * 100 + 'vh';
+    snowflake.style.left = Math.random() * 100 + 'vw';
+    snowfallContainer.appendChild(snowflake);
+    snowflakes.push(snowflake);
+  }
+  
 // Array containing exercise data with names and descriptio
 const exerciseData = [
     { name: 'Jumping Jacks', description: 'Cardio exercise that involves jumping and arm movements.' },
