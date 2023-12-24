@@ -106,7 +106,7 @@ for (let i = 0; i < snowflakeCount; i++) {
     snowflake.style.position = 'absolute';
     snowflake.style.top = Math.random() * 100 + 'vh';
     snowflake.style.left = Math.random() * 100 + 'vw';
-    snowflake.style.fontSize = ${Math.random() * 2 + 1}px;
+    snowflake.style.fontSize ='${Math.random() * 2 + 1}px';
     snowfallContainer.appendChild(snowflake);
     snowflakes.push(snowflake);
   }
