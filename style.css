@@ -97,3 +97,8 @@ button {
     border-radius: 50%;
     animation: fall 5s linear infinite;
   }
+  @keyframes fall {
+    to {
+      transform: translateY(100vh);
+    }
+  }
