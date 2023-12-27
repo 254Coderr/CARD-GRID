@@ -96,7 +96,7 @@ button {
     width: 5px;
     height: 5px;
     border-radius: 50%;
-    animation: fall 2s linear infinite;
+    animation: fall 8s linear infinite;
   }
   @keyframes fall {
     to {
