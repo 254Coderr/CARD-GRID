@@ -123,7 +123,7 @@ function animateSnowfall() {
   requestAnimationFrame(animateSnowfall);
 }
 
-animateSnowfall(); // Start animation
+animateSnowfall (); // Start animation
   
 // Array containing exercise data with names and descriptio
 const exerciseData = [
