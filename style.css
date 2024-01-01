@@ -109,7 +109,7 @@ button {
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
     border-bottom: 150px solid green; /* Adjust the color to represent the tree */
-    position: absolute;
+    position: relative;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -135,3 +135,13 @@ button {
   background-color: rgb(26, 224, 224); /* Adjust color for ornaments */
   border-radius: 50%;
 }
+/* Adjusting the size and position of the snowfall container */
+.snowfall-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
