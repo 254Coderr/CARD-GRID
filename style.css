@@ -114,3 +114,14 @@ button {
     left: 50%;
     transform: translateX(-50%);
   }
+  /* Adding decorations to the tree */
+.tree:before {
+  content: '';
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: -50px;
+  left: -60px;
+  background-color: red; /* Adjust color for ornaments */
+  border-radius: 50%;
+}
