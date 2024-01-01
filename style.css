@@ -125,3 +125,13 @@ button {
   background-color: red; /* Adjust color for ornaments */
   border-radius: 50%;
 }
+.tree:after {
+  content: '';
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: -50px;
+  right: -60px;
+  background-color: rgb(26, 224, 224); /* Adjust color for ornaments */
+  border-radius: 50%;
+}
