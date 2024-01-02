@@ -145,3 +145,11 @@ button {
   z-index: -1;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f8f8; /* Optional: Add a background color */
+  padding: 10px; /* Optional: Add padding for better visibility */
+  text-align: center; /* Optional: Center the text */
+}
