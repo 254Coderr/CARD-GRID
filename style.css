@@ -110,7 +110,7 @@ button {
     border-right: 100px solid transparent;
     border-bottom: 150px solid green; /* Adjust the color to represent the tree */
     position: relative;
-    bottom: 0;
+    bottom: -190px;
     left: 50%;
     transform: translateX(-50%);
   }
