@@ -61,12 +61,13 @@ button {
 #description-section {
     margin-top: 20px;
     padding: 15px;
-    border: 4px solid #7c2a2a;
+    border: 4px solid #cb1d1d;
     border-radius: 5px;
     background-color: #22d7e1;
     width: 100%;
     max-width: 600px;
     text-align: left;
+    font: inherit;
 }
 #legend {
     padding: 10px;
