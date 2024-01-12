@@ -140,7 +140,8 @@ const exerciseData = [
     { name: 'Bicep Curls', description: 'Strength-training exercise for the biceps using dumbbells or resistance bands.' },
     { name: 'Jump Rope', description: 'Cardio exercise that improves coordination, endurance, and cardiovascular health.' },
     { name: 'Deadlifts', description: 'Compound exercise that targets the muscles in the lower back, glutes, and hamstrings.' },
-    
+    { name: 'Tricep Dips', description: 'Isolation exercise for the triceps, often performed using parallel bars or a sturdy surface.' },
+    { name: 'Pilates', description: 'Low-impact exercise method that focuses on strength, flexibility, and controlled movements.' },
 ];
 const gameBoard = document.getElementById('game-board');
 const descriptionSection = document.getElementById('description-section');
