@@ -139,6 +139,7 @@ const exerciseData = [
     { name: 'Lunges', description: 'Lower body exercise that works the quadriceps, hamstrings, and glutes.' },
     { name: 'Bicep Curls', description: 'Strength-training exercise for the biceps using dumbbells or resistance bands.' },
     { name: 'Jump Rope', description: 'Cardio exercise that improves coordination, endurance, and cardiovascular health.' },
+    { name: 'Deadlifts', description: 'Compound exercise that targets the muscles in the lower back, glutes, and hamstrings.' },
     
 ];
 const gameBoard = document.getElementById('game-board');
