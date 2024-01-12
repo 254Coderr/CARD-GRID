@@ -135,7 +135,11 @@ const exerciseData = [
     { name: 'Cycling', description: 'Low-impact cardiovascular exercise using a stationary bike.' },
     { name: 'Squats', description: 'Lower body exercise that targets the muscles in the thighs and buttocks.' },
     { name: 'Swimming', description: 'Full-body exercise that involves swimming in a pool or open water.' },
-    { name: 'banana jump', description: 'Cardio exercise that involves legs and arm movements.' }
+    { name: 'banana jump', description: 'Cardio exercise that involves legs and arm movements.' },
+    { name: 'Lunges', description: 'Lower body exercise that works the quadriceps, hamstrings, and glutes.' },
+    { name: 'Bicep Curls', description: 'Strength-training exercise for the biceps using dumbbells or resistance bands.' },
+    { name: 'Jump Rope', description: 'Cardio exercise that improves coordination, endurance, and cardiovascular health.' },
+    
 ];
 const gameBoard = document.getElementById('game-board');
 const descriptionSection = document.getElementById('description-section');
