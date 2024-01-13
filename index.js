@@ -138,8 +138,7 @@ const exerciseData = [
     { name: 'banana jump', description: 'Cardio exercise that involves legs and arm movements.' },
     { name: 'Lunges', description: 'Lower body exercise that works the quadriceps, hamstrings, and glutes.' },
     { name: 'Bicep Curls', description: 'Strength-training exercise for the biceps using dumbbells or resistance bands.' },
-    { name: 'Jump Rope', description: 'Cardio exercise that improves coordination, endurance, and cardiovascular health.' },
-    { name: 'Tricep Dips', description: 'Isolation exercise for the triceps, often performed using parallel bars or a sturdy surface.' },
+  { name: 'Tricep Dips', description: 'Isolation exercise for the triceps, often performed using parallel bars or a sturdy surface.' },
     { name: 'Pilates', description: 'Low-impact exercise method that focuses on strength, flexibility, and controlled movements.' },
 ];
 const gameBoard = document.getElementById('game-board');
